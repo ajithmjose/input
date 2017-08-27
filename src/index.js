@@ -107,6 +107,7 @@ class Input extends React.Component {
           onChange={this.onChange}
           placeholder={this.props.placeholder || ""}
           required={this.props.required || false}
+          disabled={this.props.disabled || false}
         />
         <span role="alert" aria-live="polite" className={this.state.errorClass}>{this.state.errorMessage}</span>
       </div>
